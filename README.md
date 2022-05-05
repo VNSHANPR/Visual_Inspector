@@ -27,9 +27,31 @@ We are using Fast API to create a "GET" and "POST" route in main.py
    ``` docker run -d -p 8090:8090 fastapi_visualinspect:v3 ```
 
 
-   # Run a detection 
+  # Run a detection 
 
    Upload few images in your firebase google storage, get the URL including the token, perform a POST request using below sample json on POSTMAN : 
 
+   ```json
+           {
+          "filename": "doesnotmatter",
+          "url": "https://firebasestorage.googleapis.com/v0/b/emobility-cd20b.appspot.com/o/64.jpg?alt=media&token=44324805-02a5-4a78-adcb-d09ce25059db"
+        }
+
+   ```
+   header: 
+   Content-Type : application/json
    
- 
+   ![image](https://user-images.githubusercontent.com/41034062/166861007-ca0251f0-7044-4ea8-ba91-45df0a74c127.png)
+
+   the POST call returns the detected object "box" and the count "8" in this case.
+   
+   Here is the preview of the input Image & the output saved as predictions.jpg in Google Firebase Account : 
+   
+   <img src="https://user-images.githubusercontent.com/41034062/166861074-e0438050-5538-48d8-acfb-0374a6aac8a9.png" alt="drawing" style="width:500px;"/> <img src="https://user-images.githubusercontent.com/41034062/166861165-f6951eb2-6230-442e-8dd9-4b08e7c84933.png" alt="drawing" style="width:500px;"/>
+
+   
+   
+   
+
+
+
