@@ -1,5 +1,5 @@
 # Visual_Inspector
-# Yolo v4 Custom Object detection & count using Fast API in a docker imager (Kyma Runtime)
+# Yolo v4 Tiny on CPU Custom Object detection & count using Fast API in a docker imager (Kyma Runtime)
 
 Project provides a basic outline on developing a custom object detection project using Yolo V4 and exposing a reusable API (python FastAPI) which takes the Image URL (Stored in Object store) and then runs a detection on it , finally outputting the new image with bounding boxes and a count of the detected Custom objects.The output image with bounded boxes is saved as prediction.jpg in google firebase store once the POST call returns from the API, this image is used as the output image in the mobile App showing the detected objects. (Image is overwritten after each post call)
 
