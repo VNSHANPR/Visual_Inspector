@@ -9,6 +9,7 @@ Darknet code & credit : https://github.com/AlexeyAB/darknet
 
 <img src="https://user-images.githubusercontent.com/41034062/166865652-1c8900cc-8e6d-43fd-b43c-2c5916739d65.png" alt="drawing" style="width:290px;"/>-------------------------------<img src="https://user-images.githubusercontent.com/41034062/166865486-5fb5bcd5-20a3-482a-8b35-b180d207766b.png" alt="drawing" style="width:315px;"/>
 
+# Description 
 Project provides a basic outline on developing a custom object detection project using Yolo V4 and exposing a reusable API (python FastAPI) which takes the Image URL (Stored in Object store) and then runs a detection on it , finally outputting the new image with bounding boxes and a count of the detected Custom objects.The output image with bounded boxes is saved as prediction.jpg in google firebase store once the POST call returns from the API, this image is used as the output image in the mobile App showing the detected objects. (Image is overwritten after each post call)
 
 Key Points : 
