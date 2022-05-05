@@ -1,5 +1,5 @@
 # Visual_Inspector
-# Yolo v4 Tiny on CPU Custom Object detection & count using Fast API in a docker imager (Kyma Runtime)
+# Yolo v4 Tiny on CPU : Custom Object detection & count using Fast API in a docker imager (Kyma Runtime)
 
 Watch a Short Video on Youtube : [Visual Inspector](https://www.youtube.com/watch?v=IdRq3stH-4Al-Y "Visual Inspector")
 
